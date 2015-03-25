@@ -32,6 +32,9 @@
  
 	<body>
 		<section id="section1">
+			<a href="#">
+				<img src="img/section1/indiegogo-banner.png">
+			</a>
 
 			<div class="ssk-group ssk-count" data-url="http://dustinswords.com" data-text="Dustin's Words is a device I built my brother to better help him communicate with my parents.">
 			    <a href="" class="ssk ssk-facebook" data-media=""></a>
@@ -49,7 +52,7 @@
 
 				<div class="button">
 					<span></span>
-					<a href="#section5-content"><button>KEEP IN TOUCH</button></a>
+					<a href="#section5-content"><button>VISIT THE INDIEGOGO</button></a>
 				</div>
 			</div><!-- end section1-content -->
 		</section><!-- end section 1 -->
@@ -108,6 +111,12 @@
 						<li class="three columns mobile-two"><img src="img/section4/wetransfer.png"></li>
 					</ul>
 				</div>
+
+				<div class="button">
+					<span></span>
+					<a href="#"><button>PRESS KIT</button></a>
+				</div>
+
 			</div><!-- end section4-content -->
 		</section><!-- end section 4 -->
 
@@ -120,11 +129,16 @@
 				<form id="input-container" action="index.php" method="post" enctype="multipart/form-data">
 					<input type="email" name="email" id="email" placeholder="Email Address" required>
 
-					<select name="reason" id="reason" placeholder"Sign up to stay informed" required>
-						<option>I'd like to help fund this device's development</option>
-						<option>My family could benifit from this device</option>
-						<option>I’m a brand that would like to support this iniciative</option>
-					</select>
+					<div id="select-container">
+						<select name="reason" id="reason" required>
+							<option selected="selected">Sign up to stay informed</option>
+							<option>I'd like to help fund this device's development</option>
+							<option>My family could benifit from this device</option>
+							<option>I’m a brand that would like to support this iniciative</option>
+						</select>
+
+						<i class="icon-play"></i>
+					</div>
 
 		            <!-- Span Error / Success Notification -->
                         <div class="alert" style="display: block; text-align: right; color: white; text-transform: uppercase; font-weight: 600; padding-top: 22px;"></div>
