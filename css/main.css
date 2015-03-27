@@ -4,7 +4,6 @@
 @import url(http://www.markmurray.co/codepen/entypostyle.css);
 @import url(http://fonts.googleapis.com/css?family=Nunito:400,300,700); 
 @import url(http://fonts.googleapis.com/css?family=Rajdhani:300,400,500);
-
 @import url(http://weloveiconfonts.com/api/?family=entypo);
 
 /* entypo */
@@ -110,7 +109,7 @@ button {
     -moz-border-radius: 50px;
     -webkit-border-radius: 50px;
     border-radius: 50px;
-    background-color: #7a5ba3;
+    background-color: #508dd0;
     color: #fff;
     font-size: .75em;
     font-weight: 100;
@@ -155,7 +154,7 @@ Section 1
 
 #section1 h1  {
     text-align: center;
-    color: #7a5ba3;
+    color: #508dd0;
     margin-top: 10px;
 }
 
@@ -246,7 +245,7 @@ Section 3
 
 #section3 h4  {
     margin: 0;
-    color: #7a5ba3;
+    color: #508dd0;
     clear: both;
     max-width: 550px;
 }
@@ -266,7 +265,7 @@ Section 4
 
 #section4 h4 { 
     text-align: center; 
-    color: #7a5ba3; 
+    color: #508dd0; 
     padding: 0 0 30px 0;
     font-weight: 300;
 }
@@ -363,7 +362,7 @@ select {
 
 #section5 button { 
     background-color: #e4f068; 
-    color: #7a5ba3; 
+    color: #508dd0; 
     font-size: .75em; 
     font-weight: 500; 
     line-height: 17px;
