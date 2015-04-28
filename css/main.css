@@ -87,7 +87,7 @@ p {
 
 .email-section { height: 318px; width: 100%; }
 
-#about1, #how-it-works-content, #prototype-for-one, #partners { width: 100%; min-height: 100%; }
+#about1, #how-it-works-content, #prototype-for-one /*#partners*/ { width: 100%; min-height: 100%; }
 
 #landing-content, #how-it-works-content, #prototype-for-one, #partners-content, #about1-content, #about2-content, #about3-content, #about4-content, #about5-content, #about6-content { padding: 10% 0; }
 
@@ -208,7 +208,7 @@ nav a {
 #landing h6 {
     text-align: center;
     line-height: 28px;
-    color: #858585;
+    color: #252525;
 }
 
 .mouse-icon {
@@ -658,8 +658,6 @@ About3
 #about3-content a:hover .twitter-hover {
     opacity: 1;
 }
-
-
 /*========================
 
 About4
@@ -724,9 +722,10 @@ About5
 }
 @media (max-width: 768px) {
     body { overflow-x: hidden;}
-    #landing-content, #how-it-works-content, #for-many-content, #partners-content, #about1-content, #about2-content, #about3-content, #about4-content, #footer-content {
+    #landing-content, /*#how-it-works-content,*/ #for-many-content, #partners-content, #about1-content, #about2-content, #about3-content, #about4-content, #footer-content {
         padding: 85px 30px;
     }
+    #how-it-works h5 { font-size: 0.938em; }
     #for-many {
         min-height: 100%;
         height: auto;
@@ -737,7 +736,7 @@ About5
         padding: 0;
         margin: 0 auto;
         display: table;
-        float: none;
+        /*float: none;*/
     }
     #device-container .button { top: -220px; }
     #device-container img { 
