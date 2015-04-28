@@ -1,11 +1,11 @@
 <?php
 //add the recipient's address here
-$myemail = 'matt@dustinswords.com';
+$myemail = 'info@dustinswords.com';
 
 //grab named inputs from html then post to #thanks
 if (isset($_POST['email'])) {
 $email = strip_tags($_POST['email']);
-$reason = strip_tags($_POST['reason']);
+//$reason = strip_tags($_POST['reason']);
 echo "<span class=\"alert alert-success\" >Thanks. We will contact you soon.</span><br><br>";
 //echo "<stong>Name:</strong> ".$name."<br>";   
 //echo "<stong>Email:</strong> ".$email."<br>"; 

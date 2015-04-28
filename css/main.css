@@ -44,9 +44,10 @@ h4 {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-style: normal;
     font-variant: normal;
-    font-weight: lighter;
-    line-height: 34px;
-    letter-spacing: 2px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 24px;
+    letter-spacing: 1.94px;
 }/*===== 20px =====*/
 
 
@@ -55,8 +56,10 @@ h5 {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
     font-style: normal;
     font-variant: normal;
-    font-weight: 400;
-    line-height: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 24px;
+    letter-spacing: 1.94px;
 }/*===== 18px =====*/
 
 h6 {
@@ -78,19 +81,19 @@ p {
     line-height: 20px;
 }/*===== 12px =====*/
 
-#section1, #about2, #about3 { width: 100%; min-height: 100%; }
+#landing, #about2, #about3 { width: 100%; min-height: 100%; }
 
-#section3 { min-height: 700px; margin: 0 0 100px 0; height: 100%; }
+#for-many { min-height: 100%; margin: 0 0 100px 0; height: 100%; }
 
 .email-section { height: 318px; width: 100%; }
 
-#about1, #section2, #section4 { width: 100%; min-height: 84%; }
+#about1, #how-it-works-content, #prototype-for-one, #partners { width: 100%; min-height: 100%; }
 
-#section1-content, #section2-content, #section4-content, #about1-content, #about2-content, #about3-content, #about4-content, #about5-content, #about6-content { padding: 10% 0; }
+#landing-content, #how-it-works-content, #prototype-for-one, #partners-content, #about1-content, #about2-content, #about3-content, #about4-content, #about5-content, #about6-content { padding: 10% 0; }
 
-#section1-content h1, #section2-content h3, #section3-content h3, #section4-content h3, #about1-content h3, #about2-content h3, #about4-content h3 { padding-bottom: 30px; }
+#landing-content h1, #how-it-works-content h3, #prototype-for-one h3, #for-many-content h3, #partners-content h3, #about1-content h3, #about2-content h3, #about4-content h3 { padding-bottom: 30px; }
 
-#section1-content h6, #section2-content h6, #section3-content h6, #section4-content h6, #about1-content h6, #about2-content h6, #about4-content h6 { padding-top: 30px; }
+#landing-content h6, #how-it-works-content h6, #prototype-for-one h6,  #for-many-content h6, #partners-content h6, #about1-content h6, #about2-content h6, #about4-content h6 { padding-top: 30px; }
 
 hr {
     border: 2px solid #e4f068;
@@ -148,8 +151,8 @@ button {
 Section 1
 
 ========================*/
-#section1 {
-    background: url('../img/section1/section1-bg.jpg') center center;
+#landing {
+    background: url('../img/landing/overview.jpg') center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -194,22 +197,23 @@ nav a {
 
 /*#indiegogo-banner { position: absolute; }*/
 
-#section1 h2 { text-align: center; color: #29bca5; }
+#landing h2 { text-align: center; color: #29bca5; }
 
-#section1 h1  {
+#landing h1  {
     text-align: center;
     color: #508dd0;
     margin-top: 10px;
 }
 
-#section1 h6 {
+#landing h6 {
     text-align: center;
     line-height: 28px;
     color: #858585;
 }
 
 .mouse-icon {
-    position: absolute;
+  /* position: absolute; */
+    position: relative;
     border: 2px solid #29bca5;
     border-radius: 16px;
     height: 50px;
@@ -217,6 +221,7 @@ nav a {
   /* margin: 0 auto; */
   /* display: block; */
     bottom: 40px;
+    /*top: 80px;*/
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -263,40 +268,78 @@ nav a {
 
 /*========================
 
-Section 2
+how-it-works
 
 ========================*/
-#section2 {
-    background: url('../img/section2/section2-bg.jpg') no-repeat center center fixed;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
+#how-it-works-content {
+    background: url('../img/about3/Background-icons-large.jpg') no-repeat center center;
 }
 
-#section2 h3, #section2 h6 { color: #fff; }
+#how-it-works-content h3, #how-it-works-content h6 { color: #666666; text-align: center; }
 
-#section2 hr { float: left; }
-
-#section2 h6 { clear: both; max-width: 625px; }
-
+#how-it-works-content h6 { 
+    max-width: 625px; 
+    margin: 0 auto;
+    display: table;
+}
+#how-it-works-content ul { margin-top: 75px; }
+#how-it-works-content ul h5 { color: #4386D0; text-align: center; }
+#how-it-works-content ul img { margin: 25px auto; display: block; }
 /*========================
 
-Section 3
+prototype-for-one
 
 ========================*/
-#section3 {
-    position: relative;
-    background-color: #fff;
+#prototype-for-one {
+    background: url('../img/prototype-for-one/prototype-for-one-bg.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-#device-container { position: relative;}
+.ninty-percent { width: 90%; margin: 0 auto; }
+.fifty-percent { width: 50%; margin: 0 auto; }
 
-#device-container .button { top: -350px; left: 30px; }
+#prototype-for-one-info { float: left; }
+
+#prototype-for-one h3 { 
+    color: #fff; 
+    font-size: 28px; 
+    letter-spacing: 1.8px;
+    line-height: 34px;
+    width: 474px;
+}
+#prototype-for-one h6 { clear: left; color: #fff; padding: 10px 30px 10px 0; }
+#prototype-for-one hr { float: left; }
+#prototype-for-one-video {
+    float: right;
+    margin-top: 100px;
+    /*position: relative;*/
+}
+
+/*#prototype-for-one-video .fluid-width-video-wrapper {
+    text-align: center; 
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0; 
+}*/
+/*========================
+
+for-many
+
+========================*/
+#for-many { position: relative; background-color: #fff; }
+
+#device-container { position: relative; 
+    /*width: 50%;*/
+}
+
+/*#device-container .button { top: -350px; left: 30px; }
 
 #device-container i.icon-play {
     position: absolute;
@@ -314,20 +357,29 @@ Section 3
     font-size: 1.25em; 
     font-weight: 100;
 }
+*/
+
+#for-many-content .button { float: left; }
 
 #device-container img {
     position: relative;
     left: 30px;
-    top: 30px;
+    top: 20px;
+    margin: 0 auto;
+    display: block;
+    max-height: 700px;
+    /*top: 30px;
+    max-height: 682px;
+    max-width: 500px;*/
 }
 
-#section3-info { padding: 10% 50px 0 10%; float: right; }
+#for-many-info { float: right; padding: 10% 50px 0 0; z-index: 2; }
 
-#section3 h3 { color: #666666; }
+#for-many h3 { color: #666666; }
 
-#section3 hr { float: left; clear: left; }
+#for-many hr { float: left; clear: left; }
 
-#section3 h6  {
+#for-many h6  {
     margin: 0;
     color: #508dd0;
     clear: both;
@@ -338,26 +390,32 @@ Section 3
 Section 4
 
 ========================*/
-#section4 { background-color: #f8f8f8; }
+#partners { background-color: #f8f8f8; }
 
-#section4 h3  { text-align: center; color: #666666; } 
+#partners h3  { text-align: center; color: #666666; } 
 
-/*#section4 h4 { 
+/*#partners h4 { 
     text-align: center; 
     color: #508dd0; 
     padding: 0 0 30px 0;
     font-weight: 300;
 }*/
 
-#section4 img {
+#partners h6 {
+    text-align: center;
+    line-height: 28px;
+    color: #858585;
+}
+
+#partners img {
     display: block;
     margin: 0 auto;
     padding-bottom: 50px;
     width: 75%;
 }
 
-#section4 ul { margin-top: 4%; }
-#section4 li { padding: 0 60px; }
+#partners ul { margin-top: 4%; }
+#partners li { padding: 0 60px; }
 /*========================
 
 Email-section
@@ -370,7 +428,6 @@ Email-section
     text-transform: uppercase; 
     color: #fff;
     text-align: center;
-    margin-top: 20px;
     margin-bottom: 20px;
     font-family: 'Nunito', sans-serif; font-weight: 400;
     letter-spacing: 1.92px;
@@ -485,16 +542,26 @@ About1
 
 ========================*/
 #about1 { 
-    background: url('../img/about1/Dustins Words Autism Project - Matt Reamer3.jpg') no-repeat center center fixed;
+    background: url('../img/about1/Dustins-Words-Autism-Project1.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
 
-#about1-content h3 { color: #666666; }
-#about1-content hr { float: left; }
-#about1-content h6 { clear: both; max-width: 600px; }
+#about1 h2 { text-align: center; color: #29bca5; }
+
+#about1 h1  {
+    text-align: center;
+    color: #508dd0;
+    margin-top: 10px;
+}
+
+#about1 h6 {
+    text-align: center;
+    line-height: 28px;
+    color: #858585;
+}
 
 /*========================
 
@@ -515,7 +582,7 @@ About2
     float: right; 
     text-align: right; 
     color: #fff;
-    max-width: 776px;
+  /* max-width: 776px; */
 }
 /*========================
 
@@ -532,13 +599,13 @@ About3
 
 #about3-content ul { margin-top: 50px; }
 #about3-content li { position: relative; }
-#about3-content ul span { 
+/*#about3-content ul span { 
     position: absolute;
     height: 176px; 
     width: 176px; 
     border-radius: 50%;
-    background-color: #E4F25D;
-    opacity: .46;
+    /* background-color: #E4F25D; */
+    /*opacity: .46;
     margin-left: auto;
     margin-right: auto;
     left: 0;
@@ -551,10 +618,16 @@ About3
 #about3-content ul span:hover { 
     opacity: 0.76;
     background-color: #4E8CD2;
-}
+}*/
 
 #about3-content h3 { text-align: center; color: #666666; }
-#about3-content img { display: block; margin: 0 auto; }
+#about3-content img { 
+    display: block; 
+    margin: 0 auto;
+    -webkit-transition:All .2s ease;
+    -moz-transition:All .2s ease;
+    -o-transition:All .2s ease; 
+}
 #about3-content h6 { 
     text-transform: uppercase; 
     font-size: 16px;
@@ -573,6 +646,20 @@ About3
     font-weight: 100;
     letter-spacing: 1.5px;
 }
+
+.twitter-hover {
+    position: absolute;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    top: 9px;
+}
+
+#about3-content a:hover .twitter-hover {
+    opacity: 1;
+}
+
+
 /*========================
 
 About4
@@ -630,31 +717,45 @@ About5
 .button { margin: 20px auto; }
 
 
+@media (max-width: 868px) {
+    #prototype-for-one-video { float: none; padding-top: 40px; width: 100% }
+    #prototype-for-one-info { float: none; width: 100%; }
+    #prototype-for-one-video { margin-top: 0px; }
+}
 @media (max-width: 768px) {
     body { overflow-x: hidden;}
-    #section1-content, #section2-content, #section3-content, #section4-content, #about1-content, #about2-content, #about3-content, #about4-content, #footer-content {
+    #landing-content, #how-it-works-content, #for-many-content, #partners-content, #about1-content, #about2-content, #about3-content, #about4-content, #footer-content {
         padding: 85px 30px;
     }
-    #section3 {
+    #for-many {
         min-height: 100%;
         height: auto;
         margin: 0;
     }
-    #section3-content { padding: 10% 30px 0 30px; }
-    #section3-info {
+    #for-many-content { padding: 10% 30px 0 30px; }
+    #for-many-info {
         padding: 0;
+        margin: 0 auto;
+        display: table;
+        float: none;
     }
     #device-container .button { top: -220px; }
-    #device-container img { top: 70px; }
+    #device-container img { 
+        top: 0px;
+        left: 0;
+        top: 0;
+    }
     #input-container input { width: 400px; }
+    #prototype-for-one h3{ width: auto; }
     footer { height: auto; }
 }
 
 @media (max-width: 450px) {
     h2 { font-size: 1.875em; }
     h3 { font-size: 1.563em; }
+    #device-container img { top: -10px; }
     #input-container input, select { width: 300px; }
-    #section4 li { padding: 0; }
+    #partners li { padding: 0; }
     .mouse-icon { display: none; }
 }
 
