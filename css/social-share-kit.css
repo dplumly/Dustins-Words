@@ -109,9 +109,8 @@
 .ssk:before,
 .ssk .glyphicon {
     font-size: 16px;
-    top: 0;
-    /*letter-spacing: 14px;*/    
-    color: #475568;
+    top: 14px;
+    color: #fff;
 }
 .ssk.ssk-xs,
 .ssk-xs>.ssk {
@@ -248,12 +247,8 @@
 }
 .ssk-group,
 .ssk-sticky {
-    /*font-size: 0;
-    margin-top: -24px;
-    float: right;
-    padding-right: 50px;*/
     position: absolute;
-    top: 0;
+    top: 20px;
     right: 0;
 }
 .ssk-sticky {
@@ -693,7 +688,7 @@
 }
 */
 
-a.ssk.ssk-facebook, a.ssk.ssk-twitter, a.ssk.ssk-google-plus, a.ssk.ssk-linkedin { padding: 1em .9em; }
+/*a.ssk.ssk-facebook, a.ssk.ssk-twitter, a.ssk.ssk-google-plus, a.ssk.ssk-linkedin { padding: 1em .9em; }*/
 
 @media (max-width: 768px) {
     .ssk-count {
@@ -702,16 +697,16 @@ a.ssk.ssk-facebook, a.ssk.ssk-twitter, a.ssk.ssk-google-plus, a.ssk.ssk-linkedin
         padding-left: 38%;
         padding-right: 0px;
     }
+    .landing-social { display: none; }
 }
-@media (max-width: 940px) {
+@media (max-width: 770px) {
     .ssk-group,
     .ssk-sticky  { 
         position: relative; 
         left: -18px; 
-        top: 0px; 
+        top: 0px;
+        float: right; 
     }
-    /*a.ssk { padding: 20px 10px !important; }
-    }*/
 }
 @media (max-width: 450px) {
     .ssk-count {

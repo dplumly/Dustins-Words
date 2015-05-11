@@ -21,9 +21,10 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/gallery.css">
+		<link rel="stylesheet" href="css/fonts.css">
+		<link rel="stylesheet" href="css/icons.css">
 		<link rel="stylesheet" href="css/grid.css">
 		<link rel="stylesheet" href="css/social-share-kit.css">
-		<link rel="stylesheet" href="css/nav.css">
 		<link rel="stylesheet" href="css/main.css">
 		<script src="js/modernizr.js"></script>
 
@@ -42,86 +43,81 @@
 	</head>
  
 	<body>
+		<header class="main_h">
+            <a class="logo" href="#landing"><img src="img/nav/nav-logo.png"></a>
+
+            <div class="mobile-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#" aria-label="You are currently on this overview page that describes the project at a high level.">overview</a></li>
+                    <li><a href="about.html" aria-label="To learn more background and purpose of our non-profit initiative click here.">about</a></li>
+                    <li><a href="http://dustinswords.tumblr.com" target="_blank" aria-label="To view out blog and most up-to-date activity, click this link. It will open our blog in a new tab.">blog</a></li>
+                    <li><a href="#email" aria-label="To view out blog and most up-to-date activity, click this link. It will open our blog in a new tab.">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="ssk-group" data-url="http://dustinswords.com">
+                <a href="" class="ssk ssk-facebook" data-media="" aria-label="Share this product and initiative on Facebook"></a>
+                <a href="" class="ssk ssk-twitter" data-text="" aria-label="Share this product and initiative on Twitter"></a>
+                <a href="" class="ssk ssk-google-plus" aria-label="Share this product and initiative on Google Plus"></a>
+                <a href="" class="ssk ssk-linkedin" aria-label="Share this product and initiative on LinkedIn"></a>
+            </div>
+        </header>
+
 		<section id="landing">
-			<!-- <a id="indiegogo-banner" href="#">
-				<img src="img/section1/indiegogo-banner.png" alt="Link to Indiegogo page to help us make this product a reality.">
-			</a> -->
-
-			<!--<nav>
-				<ul>
-					<li><a id="navActive" href="#">overview</a></li>
-					<li><a href="#">about</a></li>
-					<li><a href="#">blog</a></li>
-				</ul>
-				<div class="ssk-group" data-url="http://dustinswords.com" data-text="">
-				    <a href="" class="ssk ssk-facebook" data-media=""></a>
-				    <a href="" class="ssk ssk-twitter" data-text="Share text for twitter"></a>
-				    <a href="" class="ssk ssk-google-plus"></a>
-				    <a href="" class="ssk ssk-linkedin"></a>
-				</div>
-			</nav>-->
-
 			<div id="nav">
-		      	<ul>
-		        	<li><a id="navActive" href="#" aria-label="You are currently on this overview page that describes the project at a high level.">overview</a></li>
-		        	<li><a href="about.html" aria-label="To learn more background and purpose of our non-profit initiative click here.">about</a></li>
-		        	<li><a href="http://dustinswords.tumblr.com" target="_blank" aria-label="To view out blog and most up-to-date activity, click this link. It will open our blog in a new tab.">blog</a></li>
-		        	<li class="scroll"><a href="#email" aria-label="To view out blog and most up-to-date activity, click this link. It will open our blog in a new tab.">Contact</a></li>
-		        	<li>
-		        		<div class="ssk-group" data-url="http://dustinswords.com">
-				    <a href="" class="ssk ssk-facebook" data-media="" aria-label="Share this product and initiative on Facebook"></a>
-				    <a href="" class="ssk ssk-twitter" data-text="" aria-label="Share this product and initiative on Twitter"></a>
-				    <a href="" class="ssk ssk-google-plus" aria-label="Share this product and initiative on Google Plus"></a>
-				    <a href="" class="ssk ssk-linkedin" aria-label="Share this product and initiative on LinkedIn"></a>
-						</div>
-					</li>
-		      	</ul>
-    		</div>
+				<div id="nav-center">
+			      	<tr>
+			        	<td><a href="#" aria-label="You are currently on this overview page that describes the project at a high level.">overview</a></td>
+			        	<td><a href="about.html" aria-label="To learn more background and purpose of our non-profit initiative click here.">about</a></td>
+			        	<td><a href="http://dustinswords.tumblr.com" target="_blank" aria-label="To view out blog and most up-to-date activity, click this link. It will open our blog in a new tab.">blog</a></td>
+			        	<td class="scroll"><a href="#email" aria-label="To view out blog and most up-to-date activity, click this link. It will open our blog in a new tab.">Contact</a></td>
+			      	</tr>
+			    </div><!-- end nav-center -->
+    		</div><!-- end nav -->
 
-    		<button id="nav-toggle" aria-label="Open up the mobile and tablet navigation menu.">Menu<span></span></button>
-    		
 
 			<div id="landing-content">
-				<!-- <h2>our mission:</h2> -->
-				<h1>Dustin's Words</h1>
-					<hr>
-				<h6 class="five columns centered">An invention that helps people who can’t speak communicate their needs at the push of a button.</h6>
+				<img src="img/landing/logo1.png">
+				<img id="logo2" src="img/landing/logo2.png">
+
+				<h5 class="seven columns centered">An invention that helps people who can’t speak communicate their needs at the push of a button.</h5>
 
 				<div class="button">
 					<span></span>
 					<a href="#how-it-works" aria-label="Want to keep informed about the project or want to help in anyway? This link will send you down the page, directly to our form."><button>How It Works</button></a>
 				</div>
-				<!-- <div class="button">
-						<span></span>
-						<a class="gallery" href="https://vimeo.com/96746468" aria-label="A video of how Dustin's Words came to be and a little more about Dustin."><button><i class="icon-play"></i><p>Overview Video</p></button></a>
-				</div> -->
-			</div><!-- end section1-content -->
-				<div class="mouse-icon">
-					<div class="wheel"></div>
-				</div>
-		</section><!-- end section 1 -->
+			</div><!-- end landing-content -->
+		</section><!-- end landing -->
 
 
 		<section id="how-it-works">
 			<div id="how-it-works-content" class="twelve columns centered">
-				<h3>how it works</h3>
-					<hr>
-				<h6>Dustin’s Words provides people who can’t speak an easy way to send simple text messages over a distance, which helps both the caregiver and the person using the device have a little more independence.</h6>
+				<h2>how it works</h2>
+				<h5>Dustin’s Words provides people who can’t speak an easy way to send simple text messages over a distance, which helps both the caregiver and the person using the device have a little more independence.</h5>
 
-				<ul class="row">
-					<li class="four columns">
-						<img src="img/how-it-works/push-button.png" alt="hand pushing button icon">
-						<h5>push of a button</h5>
-					</li>
-					<li class="four columns">
-						<img src="img/how-it-works/wifi.png" alt="phone sending text message icon">
-						<h5>txt sends over wi-fi</h5>
-					</li>
-					<li class="four columns">
-						<img src="img/how-it-works/text-messages.png" alt="person recieving text message icon">
-						<h5>caregiver receives txt</h5>
-					</li>
-				</ul>
+				<div class="row">
+					<!--<ul class="nine columns centered">-->
+					<ul>
+						<li class="four columns">
+							<img src="img/how-it-works/push-button.png" alt="hand pushing button icon">
+							<h4>push of <br> a button</h4>
+						</li>
+						<li class="four columns">
+							<img src="img/how-it-works/wifi.png" alt="phone sending text message icon">
+							<h4>txt sends <br> over wi-fi</h4>
+						</li>
+						<li class="four columns">
+							<img src="img/how-it-works/text-messages.png" alt="person recieving text message icon">
+							<h4>caregiver <br> receives txt</h4>
+						</li>
+					</ul>
+				</div><!-- end row -->
 			</div><!-- end how-it-works-content -->
 		</section><!-- end how-it-works 2 -->
 
@@ -129,8 +125,7 @@
 		<section id="prototype-for-one">
 			<div id="prototype-for-one-content" class="ninty-percent">
 				<div id="prototype-for-one-info" class="fifty-percent">
-					<h3>From Prototype for One...</h3>
-						<hr>
+					<h3>From Prototype <br> <span>for One...</span></h3>
 					<h6>We want to transform Dustin’s Words, a prototype designed for one person, into a consumer-level product and platform available to help many. We’re designing, developing, and testing several iterations of Dustin’s Words with other people with non-verbal autism in order to land on a low-cost solution that we can scale for consumer-level consumption. Along with the physical product, we plan to develop an easy-to- use web tool that caregivers can use to customize their device.
 					</h6>
 				</div><!-- end prototype-for-one-info -->
@@ -145,64 +140,22 @@
 		<section id="for-many">
 			<div id="for-many-content">
 				<div id="for-many-info" class="six columns">
-					<h3>To Product for Many</h3>
-						<hr>
+					<h3>To A Product <br> <span>for Many</span></h3>
 					<h6>We want to transform Dustin’s Words, a prototype designed for one person, into a consumer-level product and platform available to help many. We’re designing, developing, and testing several iterations of Dustin’s Words with other people with non-verbal autism in order to land on a low-cost solution that we can scale for consumer-level consumption. Along with the physical product, we plan to develop an easy-to- use web tool that caregivers can use to customize their device.
 					<br>
 					</h6>
-
-					<div class="button">
-						<span></span>
-						<a href="http://www.dustinswords.tumblr.com" target="_blank" aria-label="view our blog"><button>view our blog</button></a>
-					</div>
 				</div><!-- end for-many-info -->
 
 				<div id="device-container" class="six columns">
-					<img src="img/for-many/device-guts-med.jpg" alt="A prototype photo of Dustin's Words with a play button on top of it that will luanch a video player. The video talks in more detail about the inception of the version 1 prototype.">
-
-					<!-- <div class="button">
-						<span></span>
-						<a class="gallery" href="https://vimeo.com/96746468" aria-label="A video of how Dustin's Words came to be and a little more about Dustin."><button><i class="icon-play"></i><p>Prototype Video</p></button></a>
-					</div> -->
-				</div>
+					<img src="img/for-many/device-guts-90.jpg" alt="A prototype photo of Dustin's Words with a play button on top of it that will luanch a video player. The video talks in more detail about the inception of the version 1 prototype.">
+				</div><!-- end device-container -->
 			</div><!-- end for-many-content -->
 		</section><!-- end for-many -->
 
-		<section id="partners">
-			<div id="partners-content">
-				<h3>Our Supporters</h3>
-				<!-- <h4>IN CONJUNCTION WITH</h4> -->
-					<hr>
-					<h6>We’re working with some great companies to help bring Dustin’s Words to life.</h6>
-				<div class="row">
-					<ul class="twelve columns">
-						<li class="three columns mobile-two"><img src="img/partners/team_one.png" alt="Team One is our partner"></li>
-						<li class="three columns mobile-two"><img src="img/partners/accesssibility.png" alt="Accessibility Camp SF is our partner"></li>
-						<li class="three columns mobile-two"><img src="img/partners/adobe.png" alt="Adobe is a sponsor"></li>
-						<li class="three columns mobile-two"><img src="img/partners/buglabs.png" alt="Bug Labs is our partner"></li>
-						<li class="three columns mobile-two"><img src="img/partners/indiegogo.png" alt="Indiegogo is a proud supporter"></li>
-						<li class="three columns mobile-two"><img src="img/partners/github.png" alt="GitHub is a supporter"></li>
-						<li class="three columns mobile-two"><img src="img/partners/smashingmagazine.png" alt="Smashing Magazine is a supporter"></li>
-						<li class="three columns mobile-two"><img src="img/partners/spark.png" alt="Spark.io is our partner"></li>
-						<li class="three columns mobile-two"><img src="img/partners/thenounproject.png" alt="The Noun Project is a partner"></li>
-						<li class="three columns mobile-two"><img src="img/partners/usertesting.png" alt="User Testing.com is a sponsor"></li>
-						<li class="three columns mobile-two"><img src="img/partners/vcubrandcenter.png" alt="VCU Brandcenter is our partner"></li>
-						<li class="three columns mobile-two"><img src="img/partners/wetransfer.png" alt="WeTransfer is a supporter"></li>
-					</ul>
-				</div>
-
-				<!-- <div class="button">
-					<span></span>
-					<a href="#" aria-label="If your iterested in sharing this on social and are part of a press entity, here is a kit in where you will find assets you can use for your story or posting."><button>PRESS KIT</button></a>
-				</div> -->
-
-			</div><!-- end partners-content -->
-		</section><!-- end partners-->
-
 		<section id="email" class="email-section">
 			<div class="email-content">
-				<h6>stay informed</h6>
-				<p>Want to help us make the world more accessible? Get in touch.</p>
+				<h3>stay informed</h3>
+				<h6>Want to help us make the world more accessible? Get in touch.</h6>
 
 				<form id="input-container" action="index.php" method="post" enctype="multipart/form-data">
 					<input type="email" aria-label="Enter Your Email Address" name="email" id="email" placeholder="Email Address" required>
@@ -220,12 +173,12 @@
 		<footer>
 			<ul id="footer-content" class="row">
 				<li class="four columns">
-					<a href="#"><img src="img/footer/github.png" alt="GitHub Logo and link to our profile"></a>
+					<a href="https://github.com/orgs/Dustins-Words" target="_blank"><img src="img/footer/github.png" alt="GitHub Logo and link to our profile"></a>
 					<h6>github</h6>
 					<p>Our code is open source. Download it and make it your own</p>
 				</li>
 				<li class="four columns">
-					<a href=""><img src="img/footer/thingiverse.png" alt="Thingaverse Logo and link to our profile"></a>
+					<a href="http://www.thingiverse.com/dustinswords" target="_blank"><img src="img/footer/thingiverse.png" alt="Thingaverse Logo and link to our profile"></a>
 					<h6>thingiverse</h6>
 					<p>We’re sharing our 3D sketches so that anyone can print a device of their own.</p>
 				</li>
@@ -242,14 +195,14 @@
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
 		<script src="js/gallery.js"></script>
 		<script src="js/fitvids.js"></script>
-		<!-- Social Share Kit JS -->
 		<script src="js/social-share-kit.min.js"></script>
-		<script src="js/responsive-nav.js"></script>
+		<script src="js/slide-down-nav.js"></script>
+		<script src="js/scrolline.js"></script>
 
 		<!-- Scroll Down Page -->
 		<script>
 			$(function() {
-			  $('.button a').click(function() {
+			  $('.button a, .scroll a').click(function() {
 			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 			      var target = $(this.hash);
 			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -264,29 +217,22 @@
 			});
 	    </script>
 
-	    <script src=jquery.fitvids.js></script>
-<script>$(document).ready(function(){
-$("#prototype-for-one-video").fitVids();
-});
-</script>
-
-	    <!-- Scroll Down Page 
-		<script>
-			$(function() {
-			  $('.scroll a').click(function() {
-			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-			      var target = $(this.hash);
-			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-			      if (target.length) {
-			        $('html,body').animate({
-			          scrollTop: target.offset().top
-			        }, 1000);
-			        return false;
-			      }
-			    }
-			  });
+	    <script>
+	    	$.scrolline({
+			    reverse : false,
+			    direction : 'vertical',
+			    position : 'right',
+			    backColor : '#252525',
+			    frontColor : '#00e4c1',
+			    weight : 8
 			});
-	    </script>-->
+	    </script>
+
+		<script>$(document).ready(function(){
+				$("#prototype-for-one-video").fitVids();
+			});
+		</script>
+
 
 	    <!-- Google Analytics -->
 	    <script>
@@ -307,52 +253,44 @@ $("#prototype-for-one-video").fitVids();
 		</script>
 
 		<!-- Contact Form Validation -->
-      	<script type="text/javascript">
-         // Contact Form
+      	<script>         
+        $(document).ready(function() {
+           	var form = $('#input-container'); // contact form
+           	var submit = $('#submit');  // submit button
+           	var alert = $('.alert'); // alert div for show alert message
          
-         $(document).ready(function() {
-           var form = $('#input-container'); // contact form
-           var submit = $('#submit');  // submit button
-           var alert = $('.alert'); // alert div for show alert message
+           	// form submit event
+           	form.on('submit', function(e) {
+            e.preventDefault(); // prevent default form submit
          
-           // form submit event
-           form.on('submit', function(e) {
-             e.preventDefault(); // prevent default form submit
-         
-             $.ajax({
-               url: 'index.php', // form action url
-               type: 'POST', // form submit method get/post
-               dataType: 'html', // request type html/json/xml
-               data: form.serialize(), // serialize form data 
-               beforeSend: function() {
-                 alert.fadeOut();
-                 submit.html('Sending....'); // change submit button text
-               },
-               success: function(data) {
-                 alert.html(data).fadeIn(); // fade in response data
-                 form.trigger('reset'); // reset form
-                 submit.html('Send Email'); // reset submit button text
-              //   setTimeout(alert.html(data);, 3000);
-               },
-               error: function(e) {
-                 console.log(e)
-               }
-             });
-            });
-          }); 
+            $.ajax({
+               	url: 'index.php', // form action url
+               	type: 'POST', // form submit method get/post
+               	dataType: 'html', // request type html/json/xml
+               	data: form.serialize(), // serialize form data 
+               		beforeSend: function() {
+                 		alert.fadeOut();
+                 		submit.html('Sending....'); // change submit button text
+               		},
+	               success: function(data) {
+	                 	alert.html(data).fadeIn(); // fade in response data
+	                 	form.trigger('reset'); // reset form
+	                 	submit.html('Send Email'); // reset submit button text
+	              		//   setTimeout(alert.html(data);, 3000);
+               		},
+               			error: function(e) {
+                 			console.log(e)
+               			}
+             		});
+            	});
+          	}); 
       	</script>
         <!-- End Contact Form Validation -->
 
-    <!-- Social Share Kit JS Initialize-->
-    <script type="text/javascript">
-		SocialShareKit.init();
-	</script>
-
-	 <script>
-      	var navigation = responsiveNav("#nav", {
-        	customToggle: "#nav-toggle"
-      	});
-    </script>
+	    <!-- Social Share Kit JS Initialize-->
+	    <script type="text/javascript">
+			SocialShareKit.init();
+		</script>
 
 	</body>
 
