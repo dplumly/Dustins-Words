@@ -60,6 +60,32 @@ html.remodal-is-locked {
 
 .remodal { position: relative; display: inline-block; }
 
+#modal-content  option { color: #a8a8a8; }
+#modal-content select {
+    width: 328px;
+    padding: 9px;
+    text-transform: uppercase;
+    color: #a8a8a8;
+    font-size: 1.000em;
+    font-family: 'CrimsonText-Italic', sans-serif;
+    border: 0px;
+    margin: 10px 0;
+    height: 45px;
+    -webkit-border-radius: 0px;
+}
+
+#modal-content textarea {
+    width: 328px;
+    padding: 9px;
+    text-transform: uppercase;
+    color: #00e1b9;
+    font-size: 1.000em;
+    font-family: 'CrimsonText-Italic', sans-serif;
+    border: 0px;
+    margin: 10px 0;
+}
+textarea:focus::-webkit-input-placeholder { color: transparent;}
+
 /* Anti-zoom. Font-size should be >= 16px. */
 
 .remodal select,
@@ -231,15 +257,14 @@ body.remodal-is-active .remodal {
 
 .remodal-confirm {
     position: relative;
-    background-color: transparent;
-    color: #0e152b;
+    background-color: #0e152b;
+    color: #fff;
     font-size: 1em;
     letter-spacing: 1px;
-    border: none;
+    border: 1px solid #0e152b;
     outline: none !important;
     text-transform: uppercase;
     font-family: 'AvenirLTStd-Book', Helvetica, Arial, sans-serif;
-    border: 1px solid #0e152b;
     height: 34px;
     width: 112px;
     border-radius: 0;
@@ -247,18 +272,21 @@ body.remodal-is-active .remodal {
 }
 
 .remodal-confirm:hover,
-.remodal-confirm:active {
-    color: #fff;
-    background: #0e152b;
+.remodal-confirm:active,
+.remodal-cancel:hover,
+.remodal-cancel:active {
+    background: #fff;
+    color: #0e152b;
+    border: 1px solid #0e152b;
 }
 
 .remodal-cancel {
     position: relative;
-    background-color: transparent;
-    color: #0e152b;
+    background-color: #0e152b;
+    color: #fff;
     font-size: 1em;
     letter-spacing: 1px;
-    border: none;
+    border: 1px solid #0e152b;
     outline: none !important;
     text-transform: uppercase;
     font-family: 'AvenirLTStd-Book', Helvetica, Arial, sans-serif;
@@ -267,12 +295,6 @@ body.remodal-is-active .remodal {
     width: 112px;
     border-radius: 0;
     -webkit-transition: All .2s ease;
-}
-
-.remodal-cancel:hover,
-.remodal-cancel:active {
-    color: #fff;
-    background: #0e152b;
 }
 
 /* Media queries

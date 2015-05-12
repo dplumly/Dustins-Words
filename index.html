@@ -20,11 +20,11 @@
 		<!-- <css> -->
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/gallery.css">
 		<link rel="stylesheet" href="css/fonts.css">
 		<link rel="stylesheet" href="css/icons.css">
 		<link rel="stylesheet" href="css/grid.css">
 		<link rel="stylesheet" href="css/social-share-kit.css">
+		<link rel="stylesheet" href="css/remodal.css">
 		<link rel="stylesheet" href="css/main.css">
 		<script src="js/modernizr.js"></script>
 
@@ -35,7 +35,7 @@
 		        f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
 		        f._hjSettings={hjid:27681, hjsv:3};
 		        c=b.createElement("script");c.async=1;
-		        c.src="//static.hotjar.com/c/hotjar-27681.js?sv=3";
+		        c.src="http://static.hotjar.com/c/hotjar-";
 		        b.getElementsByTagName("head")[0].appendChild(c); 
 		    })(window,document);
 		</script>
@@ -57,7 +57,7 @@
                     <li><a href="#" aria-label="You are currently on this overview page that describes the project at a high level.">overview</a></li>
                     <li><a href="about.html" aria-label="To learn more background and purpose of our non-profit initiative click here.">about</a></li>
                     <li><a href="http://dustinswords.tumblr.com" target="_blank" aria-label="To view out blog and most up-to-date activity, click this link. It will open our blog in a new tab.">blog</a></li>
-                    <li><a href="#email" aria-label="To view out blog and most up-to-date activity, click this link. It will open our blog in a new tab.">Contact</a></li>
+                    <li><a href="#modal" aria-label="To view out blog and most up-to-date activity, click this link. It will open our blog in a new tab.">Contact</a></li>
                 </ul>
             </nav>
 
@@ -76,7 +76,7 @@
 			        	<td><a href="#" aria-label="You are currently on this overview page that describes the project at a high level.">overview</a></td>
 			        	<td><a href="about.html" aria-label="To learn more background and purpose of our non-profit initiative click here.">about</a></td>
 			        	<td><a href="http://dustinswords.tumblr.com" target="_blank" aria-label="To view out blog and most up-to-date activity, click this link. It will open our blog in a new tab.">blog</a></td>
-			        	<td class="scroll"><a href="#email" aria-label="To view out blog and most up-to-date activity, click this link. It will open our blog in a new tab.">Contact</a></td>
+			        	<td><a href="#modal" aria-label="To view out blog and most up-to-date activity, click this link. It will open our blog in a new tab.">Contact</a></td>
 			      	</tr>
 			    </div><!-- end nav-center -->
     		</div><!-- end nav -->
@@ -102,7 +102,6 @@
 				<h5>Dustin’s Words provides people who can’t speak an easy way to send simple text messages over a distance, which helps both the caregiver and the person using the device have a little more independence.</h5>
 
 				<div class="row">
-					<!--<ul class="nine columns centered">-->
 					<ul>
 						<li class="four columns">
 							<img src="img/how-it-works/push-button.png" alt="hand pushing button icon">
@@ -123,14 +122,14 @@
 
 
 		<section id="prototype-for-one">
-			<div id="prototype-for-one-content" class="ninty-percent">
-				<div id="prototype-for-one-info" class="fifty-percent">
+			<div id="prototype-for-one-content" class="full-row">
+				<div id="prototype-for-one-info" class="six columns">
 					<h3>From Prototype <br> <span>for One...</span></h3>
 					<h6>We want to transform Dustin’s Words, a prototype designed for one person, into a consumer-level product and platform available to help many. We’re designing, developing, and testing several iterations of Dustin’s Words with other people with non-verbal autism in order to land on a low-cost solution that we can scale for consumer-level consumption. Along with the physical product, we plan to develop an easy-to- use web tool that caregivers can use to customize their device.
 					</h6>
 				</div><!-- end prototype-for-one-info -->
 
-				<div id="prototype-for-one-video" class="fifty-percent">
+				<div id="prototype-for-one-video" class="six columns">
 					<iframe src="https://player.vimeo.com/video/96746468" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
 				</div><!-- end prototype-for-one-video -->
 			</div><!-- end prototype-for-one-content -->
@@ -138,14 +137,12 @@
 
 
 		<section id="for-many">
-			<div id="for-many-content">
+			<div id="for-many-content" class="">
 				<div id="for-many-info" class="six columns">
 					<h3>To A Product <br> <span>for Many</span></h3>
 					<h6>We want to transform Dustin’s Words, a prototype designed for one person, into a consumer-level product and platform available to help many. We’re designing, developing, and testing several iterations of Dustin’s Words with other people with non-verbal autism in order to land on a low-cost solution that we can scale for consumer-level consumption. Along with the physical product, we plan to develop an easy-to- use web tool that caregivers can use to customize their device.
-					<br>
 					</h6>
 				</div><!-- end for-many-info -->
-
 				<div id="device-container" class="six columns">
 					<img src="img/for-many/device-guts-90.jpg" alt="A prototype photo of Dustin's Words with a play button on top of it that will luanch a video player. The video talks in more detail about the inception of the version 1 prototype.">
 				</div><!-- end device-container -->
@@ -157,10 +154,11 @@
 				<h3>stay informed</h3>
 				<h6>Want to help us make the world more accessible? Get in touch.</h6>
 
-				<form id="input-container" action="index.php" method="post" enctype="multipart/form-data">
-					<input type="email" aria-label="Enter Your Email Address" name="email" id="email" placeholder="Email Address" required>
+				<form id="input-container" action="//dustinswords.us10.list-manage.com/subscribe/post?u=265df7d89342cdafa7867c4fd&amp;id=358dd2175b" method="post">
 
-					<button name="submit" type="submit" id="submit" label="send your email" aria-label="send">send</button>
+					<input type="email" value="" name="EMAIL" aria-label="Enter Your Email Address" placeholder="Email Address" required>
+
+					<button type="submit" value="Subscribe" name="subscribe" label="send your email" aria-label="send">send</button>
 				</form>
 
 		            <!-- Span Error / Success Notification -->
@@ -193,11 +191,47 @@
 
 		<!-- <javascript> -->
 		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-		<script src="js/gallery.js"></script>
 		<script src="js/fitvids.js"></script>
 		<script src="js/social-share-kit.min.js"></script>
 		<script src="js/slide-down-nav.js"></script>
 		<script src="js/scrolline.js"></script>
+		<script src="js/remodal.js"></script>
+
+		<div class="remodal-bg">
+		    <a href="#modal">Contact Modal</a>
+		    <div class="remodal" data-remodal-id="modal">
+		        <h3>Contact Us!</h3>
+
+		        <form id="modal-content" action="" method="post" enctype="multipart/form-data">
+
+		        	<input type="name" tabindex="1" aria-label="Enter Your Name" name="name" id="name" placeholder="Name" required>
+
+					<input type="email" tabindex="2" aria-label="Enter Your Email Address" name="email" id="email" placeholder="Email Address" required>
+
+						<select>
+							<option value="" disabled selected>SIGN UP TO STAY INFORMED</option>
+							<option value="1">I know someone who could benefit from Dustin’s Words.</option>
+							<option value="2">I’d like to share my family’s story.</option>
+							<option value="3">I’m an individual interested in helping.</option>
+							<option value="4">I’m a company interested in helping.</option>
+							<option value="5">I’d like to stay informed.</option>
+						</select>
+
+					<textarea type="text" tabindex="3" aria-label="Enter a Message"placeholder="Message" rows="10" maxlength="1500" name="message"></textarea>
+				</form>
+		            
+		            <br>
+		        <a class="remodal-cancel" href="#">Cancel</a>
+		        <a class="remodal-confirm" href="#">Submit</a>
+		    </div>
+
+		    <!--<div data-remodal-id="modal2">
+		        <h1>Another one window</h1>
+		        <p>Hello!</p>
+		            <br>
+		        <a class="remodal-confirm" href="#">Hello!</a>
+		    </div>-->
+		</div>
 
 		<!-- Scroll Down Page -->
 		<script>
@@ -244,13 +278,6 @@
 	         ga('create', 'UA-38568235-3', 'auto');
 	         ga('send', 'pageview');
       	</script>
-
-	    <!-- Script for video -->
-	    <script type="text/javascript">
-		   $(document).ready(function() {
-		      $(".gallery").tosrus();
-		   });
-		</script>
 
 		<!-- Contact Form Validation -->
       	<script>         

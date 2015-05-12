@@ -68,13 +68,12 @@ p {
     line-height: 20px;
 }/*===== 12px =====*/
 
-#landing, #about1, { width: 100%; height: 80%; min-height: 650px; }
+#landing, #about1, #brotherly { width: 100%; height: 80%; min-height: 650px; }
 #how-it-works, #prototype-for-one, #for-many, #open-source { width: 100%; min-height: 500px; }
+#technology { height: 300px; }
 
 
-
-#landing-content { padding: 70px 0; }
-#how-it-works-content { padding: 75px 0; }
+#landing-content, #how-it-works-content { padding: 75px 0; }
 
 
 
@@ -84,8 +83,8 @@ p {
 #team { width: 100%; min-height: 100%; }
 .email-section { height: 275px; width: 100%; }
 #how-it-works-content{ width: 100%; min-height: 100%; }
-#about1-content, #open-source-content, #team-content, #technology-content, #about5-content, #about6-content { padding: 10% 0; }
-#prototype-for-one h6,  #for-many-content h6, #about1-content h6, #open-source-content h6, #technology-content h6 { padding-top: 30px; }
+#about1-content, #open-source-content, #brotherly-content, #team-content, #technology-content, #about5-content, #about6-content { padding: 10% 0; }
+#prototype-for-one h6,  #for-many-content h6, #about1-content h6, #brotherly-content h6, #open-source-content h6, #technology-content h6 { padding-top: 30px; }
 
 .button {
     position: relative;
@@ -239,7 +238,7 @@ nav ul a { text-transform: uppercase; }
 }
 /*========================
 
-Section 1
+Landing
 
 ========================*/
 #landing {
@@ -291,25 +290,22 @@ prototype-for-one
     background-size: cover;
 }
 
-.ninty-percent { width: 90%; margin: 0 auto; }
-.fifty-percent { width: 50%; margin: 0 auto; }
-
 #prototype-for-one-info { 
-    position: absolute;
+    position: relative;
     top: 50%;
-    transform: translateY(-50%);
-    left: 5%;
+    transform: translateY(30%);
+    left: 2.5%;
 }
 
 #prototype-for-one h3 {  color: #fff; }
 #prototype-for-one h3 span { color: #00e4c1; }
 #prototype-for-one h6 { color: #fff; max-width: 450px; }
 #prototype-for-one-video {
-    position: absolute;
-    top: 55%;
-    transform: translateY(-50%);
-    right: 5%;
-    width: 40%;
+    position: relative;
+    top: 50%;
+    transform: translateY(30%);
+    right: 2.5%;
+    width: 47%;
 }
 /*========================
 
@@ -320,24 +316,24 @@ for-many
 #for-many h3 span { color: #00e4c1; }
 
 #device-container { 
-    position: absolute;
+    position: relative;
     left: -120px;
     top: 50px;
     height: 100%;
-    width: 60%;
 }
 
-#device-container img {
-    max-height: 490px;
+#device-container img { 
+    max-height: 540px; 
+    float: right;
 }
 
 #for-many-info { 
-    padding: 10% 50px 0 0; 
     z-index: 2;
-    position: absolute;
+    position: relative;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translateY(50%);
     right: 0; 
+    float: right;
 }
 
 #for-many h3 { color: #252525; }
@@ -377,7 +373,7 @@ Email-section
     height: 45px;
     padding: 0 9px; 
     text-transform: uppercase;
-    color: #00e1b9;
+    color: #00e4c1;
     font-size: 1.000em;
     font-family: 'CrimsonText-Italic', sans-serif;
     line-height: 24px;
@@ -404,6 +400,11 @@ Email-section
     color: #0e152b;
     border: 1px solid #0e152b;
 }
+
+::-webkit-input-placeholder { color: #a8a8a8; }
+:-moz-placeholder { color: #a8a8a8; } /* Firefox 18- */
+::-moz-placeholder { color: #a8a8a8; } /* Firefox 19+ */
+:-ms-input-placeholder {  color: #a8a8a8; }
 
 input:focus::-webkit-input-placeholder { color: transparent;}
 /*========================
@@ -483,24 +484,40 @@ About1
 }
 /*========================
 
+Brotherly
+
+========================*/
+#brotherly h3 {
+    color: #252525;
+    float: left;
+    text-align: left;
+}
+#brotherly h3 span { color: #00e4c1; }
+#brotherly h6 {
+    float: left;
+    text-align: left;
+    color: #252525;
+    clear: left;
+    max-width: 550px;
+}
+/*========================
+
 open-source
 
 ========================*/
-#open-source { 
-    background-color: #fff;
-}
+#open-source {  background-color: #fff; }
 
 #open-source-content h3 { 
     color: #252525; 
-    float: right; 
-    text-align: right;
+    float: left; 
+    text-align: left;
 }
 #open-source-content h3 span { color: #00e4c1; }
 #open-source-content h6 { 
-    float: right; 
-    text-align: right; 
+    float: left; 
+    text-align: left; 
     color: #252525;
-    clear: right;
+    clear: left;
     max-width: 550px;
 }
 /*========================
@@ -508,7 +525,7 @@ open-source
 Technology
 
 ========================*/
-#technology{ 
+#technology { 
     background: url('../img/technology/technology-bg.png') no-repeat center center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -516,12 +533,13 @@ Technology
     background-size: cover;
 }
 
-#technology-content h3 { color: #fff; }
-#technology-content hr { float: left; }
+#technology-content h3 { color: #fff; float: right; }
 #technology-content h6 { 
-    clear: left; 
     max-width: 514px;
-    color: #fff; 
+    color: #fff;
+    float: right; 
+    text-align: right;
+    clear: right;
 }
 
 /*========================
@@ -529,6 +547,7 @@ Technology
 team
 
 ========================*/
+#team { background-color: #f8f8f8; }
 #team-content ul { margin-top: 50px; }
 #team-content li { position: relative; }
 #team-content h3 { text-align: center; color: #666666; }
@@ -571,26 +590,13 @@ team
 }
 
 
-@media (max-width: 868px) {
-    #prototype-for-one-content { padding: 50px 0; }
-    #prototype-for-one-info { 
-        position: relative; 
-        top: 0;
-        transform: translateY(0);
-        left: 0;
+@media screen and (max-width: 968px) , screen and (max-height: 768px) {
+    #device-container {
+        left: -38px;
+        top: 162px;
     }
-    #prototype-for-one-info h6 { max-width: 100%; }
-    #prototype-for-one-video {
-        position: relative;
-        top: 55%;
-        transform: translateY(0%);
-        right: 0;
-        left: 0; 
-        margin-top: 40px; 
-        width: 100% 
-    }
-    #prototype-for-one-info { float: none; width: 100%; }
 }
+
 @media (max-width: 768px) {
     .main_h { padding-top: 25px; }
     .logo { float: none; }
@@ -611,7 +617,6 @@ team
     #landing-content, #how-it-works-content, #prototype-for-one-content, #for-many-content, #about1-content, #open-source-content, #team-content, #technology-content, #footer-content {
         padding: 85px 30px;
     }
-
 
     #prototype-for-one-info h6, #for-many-content h6, #email-content h6 { font-size: 1em; }
 
@@ -634,15 +639,32 @@ team
         height: 100%;
         top: 40px;
         left: 0;
-        padding-bottom: 40px;
+        padding-bottom: 60px;
     }
     #device-container img { 
-        top: 0px;
         left: 0;
         top: 0;
     }
+    #prototype-for-one-content { padding: 50px 0; }
+    #prototype-for-one-info { 
+        position: relative; 
+        top: 0;
+        transform: translateY(0);
+        left: 0;
+    }
+    #prototype-for-one h3 { width: auto; }
+    #prototype-for-one-info h6 { max-width: 100%; }
+    #prototype-for-one-video {
+        position: relative;
+        top: 50%;
+        transform: translateY(0%);
+        right: 0;
+        left: 0; 
+        margin-top: 40px; 
+        width: 100% 
+    }
+    #prototype-for-one-info { float: none; width: 100%; }
     #input-container input { width: 400px; }
-    #prototype-for-one h3{ width: auto; }
     footer { height: auto; }
 }
 @media (max-width: 450px) {

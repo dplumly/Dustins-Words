@@ -20,12 +20,10 @@
 		<!-- <css> -->
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/normalize.css">
-		<link rel="stylesheet" href="css/gallery.css">
 		<link rel="stylesheet" href="css/fonts.css">
 		<link rel="stylesheet" href="css/icons.css">
 		<link rel="stylesheet" href="css/grid.css">
 		<link rel="stylesheet" href="css/social-share-kit.css">
-		<!--<link rel="stylesheet" href="css/modal.css">-->
 		<link rel="stylesheet" href="css/remodal.css">
 		<link rel="stylesheet" href="css/main.css">
 		<script src="js/modernizr.js"></script>
@@ -36,7 +34,7 @@
 		        f.hj=f.hj||function(){(f.hj.q=f.hj.q||[]).push(arguments)};
 		        f._hjSettings={hjid:27681, hjsv:3};
 		        c=b.createElement("script");c.async=1;
-		        c.src="//static.hotjar.com/c/hotjar-27681.js?sv=3";
+		        c.src="http://static.hotjar.com/c/hotjar-";
 		        b.getElementsByTagName("head")[0].appendChild(c); 
 		    })(window,document);
 		</script>
@@ -77,7 +75,7 @@
 			        	<td><a href="index.html" aria-label="You are currently on this overview page that describes the project at a high level.">overview</a></td>
 			        	<td><a href="#" aria-label="To learn more background and purpose of our non-profit initiative click here.">about</a></td>
 			        	<td><a href="http://dustinswords.tumblr.com" target="_blank" aria-label="To view out blog and most up-to-date activity, click this link. It will open our blog in a new tab.">blog</a></td>
-			        	<td class="scroll"><a  href="#modal" aria-label="To view out blog and most up-to-date activity, click this link. It will open our blog in a new tab.">Contact</a></td>
+			        	<td><a  href="#modal" aria-label="To view out blog and most up-to-date activity, click this link. It will open our blog in a new tab.">Contact</a></td>
 			      	</tr>
 			    </div><!-- end nav-center -->
     		</div><!-- end nav -->
@@ -95,10 +93,18 @@
 			</div><!-- end section1-content -->
 		</section><!-- end section 1 -->
 
-		<section id="open-source">
-			<div id="open-source-content" class="eight columns centered">
-				<h3>Open Source, <br> <span>Always Improving</span></h3>
-				<h6>We believe that helping to make the day-to-day lives of people who face accessibility challenges better won’t be achieved by a group of people in an office (no matter how cool we think we are), but by impassioned people all around the world. This is exactly why we’re open sourcing everything we do. From our user testing findings, to our code, to the 3D models we build—we want to share what we make with the world, so that together we can make the world a more accessible place. 
+		<section id="brotherly">
+			<div id="brotherly-content" class="eight columns centered">
+				<h3>Built by <br> <span>brotherly love</span></h3>
+				<h6>The story of Dustin’s Words begins with Matt Reamer and his brother, Dustin. Growing up, Matt and Dustin were like any other brothers. They played together, fought, and caused trouble together. The only difference is–they’ve never had a conversation. Because, like 25% of people living with autism, Dustin can’t speak.
+				</h6>
+				<br>
+				<br>
+				<h6>Matt built a prototype for a device that Dustin could use to communicate with their family. The device allows Dustin to communicate what he needs at the push of a button using SMS text messaging. Dustin’s Words has not only helped the Reamers communicate, it has given Dustin more independence in his day-to-day life.
+				</h6>
+				<br>
+				<br>
+				<h6>When Matt told us about what he had done for his brother, we couldn’t help but be inspired to take the idea further.  We’re working now to take the prototype that was built for Dustin and turn it into a real product that can help hundreds if not thousands of people limited by their inability to speak.
 				</h6>
 			</div>
 		</section>
@@ -107,7 +113,17 @@
 		<section id="technology">
 			<div id="technology-content" class="eight columns centered">
 				<h3>Technology</h3>
-				<h6>Using technology and personal attention to each case, we can provide a level of communication that big companies don't allow. All for free.
+				<h6>For the past few months, our team has been working to turn the simple prototype Matt built for his brother using an Arduino Yun and Temboo into a scalable product. After trialing a number of technologies, we’ve been honing in on a low-cost solution powered by Spark.io. Spark.io is a company that enables us to build an Arduino-like platform that lives in the cloud. This gives buttons and functions on Dustin’s Words the ability to be updated and customized for each individual family’s needs using a variety of online services like IFTTT, Twilio, Node.js, PHP, Python, or Spark.js. Spark.js has been particularly useful, because it gives us the ability to customize messages, delivery methods (SMS, push notifications, Whatsapp, etc.) and track word and phrase usage on the front end.
+ 
+				Over the next few months, we plan to finalize the technologies we’ll be using in the first run of 100 devices. We are committed to making the best, and most affordable product possible. If you have ideas for efficiencies, or other technologies we should look into, please contact us.
+				</h6>
+			</div>
+		</section>
+
+		<section id="open-source">
+			<div id="open-source-content" class="eight columns centered">
+				<h3>Open Source, <br> <span>Always Improving</span></h3>
+				<h6>We believe that helping to make the day-to-day lives of people who face accessibility challenges better won’t be achieved by a group of people in an office (no matter how cool we think we are), but by impassioned people all around the world. This is exactly why we’re open sourcing everything we do. From our user testing findings, to our code, to the 3D models we build—we want to share what we make with the world, so that together we can make the world a more accessible place. 
 				</h6>
 			</div>
 		</section>
@@ -214,12 +230,12 @@
 		<footer>
 			<ul id="footer-content" class="row">
 				<li class="four columns">
-					<a href="#"><img src="img/footer/github.png" alt="GitHub Logo and link to our profile"></a>
+					<a href="https://github.com/orgs/Dustins-Words" target="_blank"><img src="img/footer/github.png" alt="GitHub Logo and link to our profile"></a>
 					<h6>github</h6>
 					<p>Our code is open source. Download it and make it your own</p>
 				</li>
 				<li class="four columns">
-					<a href=""><img src="img/footer/thingiverse.png" alt="Thingaverse Logo and link to our profile"></a>
+					<a href="http://www.thingiverse.com/dustinswords" target="_blank"><img src="img/footer/thingiverse.png" alt="Thingaverse Logo and link to our profile"></a>
 					<h6>thingiverse</h6>
 					<p>We’re sharing our 3D sketches so that anyone can print a device of their own.</p>
 				</li>
@@ -251,7 +267,16 @@
 
 					<input type="email" tabindex="2" aria-label="Enter Your Email Address" name="email" id="email" placeholder="Email Address" required>
 
-					<input type="text" tabindex="3" aria-label="Enter a Message" placeholder="Message" name="message">
+						<select>
+							<option value="" disabled selected>SIGN UP TO STAY INFORMED</option>
+							<option value="1">I know someone who could benefit from Dustin’s Words.</option>
+							<option value="2">I’d like to share my family’s story.</option>
+							<option value="3">I’m an individual interested in helping.</option>
+							<option value="4">I’m a company interested in helping.</option>
+							<option value="5">I’d like to stay informed.</option>
+						</select>
+
+					<textarea type="text" tabindex="3" aria-label="Enter a Message"placeholder="Message" rows="10" maxlength="1500" name="message"></textarea>
 				</form>
 		            
 		            <br>
@@ -259,18 +284,18 @@
 		        <a class="remodal-confirm" href="#">Submit</a>
 		    </div>
 
-		    <div data-remodal-id="modal2">
+		    <!--<div data-remodal-id="modal2">
 		        <h1>Another one window</h1>
 		        <p>Hello!</p>
 		            <br>
 		        <a class="remodal-confirm" href="#">Hello!</a>
-		    </div>
+		    </div>-->
 		</div>
 
 		<!-- Scroll Down Page -->
 		<script>
 			$(function() {
-			  $('.button a, .scroll a').click(function() {
+			  $('.button a').click(function() {
 			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
 			      var target = $(this.hash);
 			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
@@ -295,13 +320,6 @@
 			    weight : 8,
 			});
 	    </script>
-
-		<script>
-			$(document).ready(function(){
-				$("#prototype-for-one-video").fitVids();
-			});
-		</script>
-
 
 	    <!-- Google Analytics -->
 	    <script>
