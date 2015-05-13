@@ -44,10 +44,8 @@ html.remodal-is-locked {
 
 .remodal-wrapper:after {
     display: inline-block;
-
     height: 100%;
     margin-left: -0.05em;
-
     content: "";
 }
 
@@ -59,7 +57,7 @@ html.remodal-is-locked {
 /* Necessary styles of the modal dialog */
 
 .remodal { position: relative; display: inline-block; }
-
+#modal-content { position: relative; }
 #modal-content  option { color: #a8a8a8; }
 #modal-content select {
     width: 328px;
@@ -74,7 +72,11 @@ html.remodal-is-locked {
     -webkit-border-radius: 0px;
 }
 
-#modal-content textarea {
+#modal-content input#message {
+    height: 100px;
+}
+
+/*#modal-content textarea {
     width: 328px;
     padding: 9px;
     text-transform: uppercase;
@@ -85,7 +87,21 @@ html.remodal-is-locked {
     margin: 10px 0;
 }
 textarea:focus::-webkit-input-placeholder { color: transparent;}
-
+*/
+.modal-button {
+    position: absolute;
+    right: 0;
+    bottom: -40px;
+    background-color: #0e152b;
+    height: 45px;
+    width: 112px;
+    border-radius: 0;
+    color: #fff;
+    font-size: .75em;
+    -webkit-transition:All .2s ease;
+    -moz-transition:All .2s ease;
+    -o-transition:All .2s ease;
+}
 /* Anti-zoom. Font-size should be >= 16px. */
 
 .remodal select,

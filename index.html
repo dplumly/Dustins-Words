@@ -154,11 +154,11 @@
 				<h3>stay informed</h3>
 				<h6>Want to help us make the world more accessible? Get in touch.</h6>
 
-				<form action="//dustinswords.us10.list-manage.com/subscribe/post?u=265df7d89342cdafa7867c4fd&amp;id=358dd2175b" method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+				<form action="//dustinswords.us10.list-manage.com/subscribe/post?u=265df7d89342cdafa7867c4fd&amp;id=358dd2175b" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
 
-					<input id="subscribe-field" type="email" value="" name="EMAIL" class="email" placeholder="email address" required>
+					<input id="subscribe-field" type="email" value="" name="EMAIL" placeholder="email address" required>
 
-					<button type="submit" value="Subscribe" name="subscribe">Subscribe</button> 
+					<button class="contact-button" type="submit" value="Subscribe" name="subscribe">Subscribe</button> 
 
 			    	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 			    	<div style="position: absolute; left: -5000px;">
@@ -197,17 +197,23 @@
 		<script src="js/slide-down-nav.js"></script>
 		<script src="js/scrolline.js"></script>
 		<script src="js/remodal.js"></script>
+		<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+		<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MESSAGE';ftypes[3]='text';fnames[4]='MMERGE4';ftypes[4]='dropdown';}(jQuery));var $mcj = jQuery.noConflict(true);
+		</script>
 
 		<div class="remodal-bg">
 		    <a href="#modal">Contact Modal</a>
 		    <div class="remodal" data-remodal-id="modal">
 		        <h3>Contact Us!</h3>
 
-		        <form id="modal-content" action="" method="post" enctype="multipart/form-data">
 
-		        	<input type="name" tabindex="1" aria-label="Enter Your Name" name="name" id="name" placeholder="Name" required>
 
-					<input type="email" tabindex="2" aria-label="Enter Your Email Address" name="email" id="email" placeholder="Email Address" required>
+
+		        <!--<form id="modal-content" action="//dustinswords.us10.list-manage.com/subscribe/post?u=265df7d89342cdafa7867c4fd&amp;id=358dd2175b" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+
+		        	<input type="text" value="" name="FNAME" tabindex="1" aria-label="Enter Your Name" placeholder="Name" required>
+
+					<input type="email" value="" name="EMAIL" placeholder="email address" required tabindex="2" aria-label="Enter Your Email Address" placeholder="Email Address" required>
 
 						<select>
 							<option value="" disabled selected>SIGN UP TO STAY INFORMED</option>
@@ -218,12 +224,52 @@
 							<option value="5">I’d like to stay informed.</option>
 						</select>
 
-					<textarea type="text" tabindex="3" aria-label="Enter a Message"placeholder="Message" rows="10" maxlength="1500" name="message"></textarea>
+					<textarea type="text" tabindex="3" aria-label="Enter a Message" placeholder="Message" rows="10" maxlength="1500" name="message"></textarea>
+				</form>-->
+
+
+
+				<form id="modal-content" action="//dustinswords.us10.list-manage.com/subscribe/post?u=265df7d89342cdafa7867c4fd&amp;id=358dd2175b" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+	
+
+						<input type="text" placeholder="Name" value="" name="FNAME" required>
+
+						<input type="email" placeholder="email address" value="" name="EMAIL" required>
+
+						<select name="MMERGE4" class="" required>
+							<option value="" disabled selected>SIGN UP TO STAY INFORMED</option>
+							<option value="I know someone who could benefit from Dustin’s Words.">I know someone who could benefit from Dustin’s Words.</option>
+							<option value="I’d like to share my family’s story.">I’d like to share my family’s story.</option>
+							<option value="I’m an individual interested in helping.">I’m an individual interested in helping.</option>
+							<option value="I’m a company interested in helping.">I’m a company interested in helping.</option>
+							<option value="I’d like to stay informed.">I’d like to stay informed.</option>
+						</select>
+
+						<input type="text" placeholder="Message" value="" name="MESSAGE" class="" id="message">
+
+						<div id="mce-responses" class="clear">
+							<div class="response" id="mce-error-response" style="display:none"></div>
+							<div class="response" id="mce-success-response" style="display:none"></div>
+						</div>    
+
+						<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+					    <div style="position: absolute; left: -5000px;">
+					    	<input type="text" name="b_265df7d89342cdafa7867c4fd_358dd2175b" tabindex="-1" value="">
+					    </div>
+					    <button class="modal-button" type="submit" value="Subscribe" name="subscribe">Subscribe</button>
 				</form>
+
+
+
 		            
 		            <br>
-		        <a class="remodal-cancel" href="#">Cancel</a>
-		        <a class="remodal-confirm" href="#">Submit</a>
+		        <!--<a class="remodal-cancel" href="#">Cancel</a>
+		        <button class="remodal-confirm" type="submit" value="Subscribe" name="subscribe">Submit</button>-->
+
+		        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+		    	<div style="position: absolute; left: -5000px;">
+		    		<input type="text" name="b_265df7d89342cdafa7867c4fd_358dd2175b" tabindex="-1" value="">
+		    	</div>
 		    </div>
 
 		    <!--<div data-remodal-id="modal2">

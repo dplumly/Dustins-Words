@@ -370,7 +370,7 @@ Email-section
 }
 
 .email-content form { position: relative; }
-#input-container { display: table; margin: 30px auto; }
+/*#input-container { display: table; margin: 30px auto; }
 
 #input-container input {
     width: 400px;
@@ -383,7 +383,7 @@ Email-section
     line-height: 24px;
     border: 0px;
 }
-
+*/
 
 
 
@@ -401,7 +401,7 @@ Email-section
     display: table;
 }
 
-.email-content button {
+.contact-button {
     position: absolute;
     right: 0;
     top: 0;
@@ -416,7 +416,7 @@ Email-section
     -o-transition:All .2s ease;
 }
 
-.email-content button:hover {
+.contact-button:hover, .modal-button:hover  {
     background-color: #fff;
     color: #0e152b;
     border: 1px solid #0e152b;
