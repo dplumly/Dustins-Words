@@ -349,7 +349,11 @@ Email-section
 
 ========================*/
 .email-section { background-color: #00e4c1; }
-.email-content { position: relative; }
+.email-content { 
+    position: relative;
+    width: 400px;
+    margin: 0 auto 
+}
 
 .email-content h3 { 
     text-transform: uppercase; 
@@ -378,6 +382,23 @@ Email-section
     font-family: 'CrimsonText-Italic', sans-serif;
     line-height: 24px;
     border: 0px;
+}
+
+
+
+
+#subscribe-field {
+    width: 400px;
+    height: 45px;
+    padding: 0 9px; 
+    text-transform: uppercase;
+    color: #00e4c1;
+    font-size: 1.000em;
+    font-family: 'CrimsonText-Italic', sans-serif;
+    line-height: 24px;
+    border: 0px;
+    margin: 10px auto;
+    display: table;
 }
 
 .email-content button {
