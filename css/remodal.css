@@ -89,9 +89,9 @@ html.remodal-is-locked {
 textarea:focus::-webkit-input-placeholder { color: transparent;}
 */
 .modal-button {
-    position: absolute;
-    right: 0;
-    bottom: -40px;
+    /*position: absolute;
+    right: 0;*/
+    bottom: -20px;
     background-color: #0e152b;
     height: 45px;
     width: 112px;
@@ -101,6 +101,10 @@ textarea:focus::-webkit-input-placeholder { color: transparent;}
     -webkit-transition:All .2s ease;
     -moz-transition:All .2s ease;
     -o-transition:All .2s ease;
+}
+
+input#message {
+    padding-bottom: 64px !important;
 }
 /* Anti-zoom. Font-size should be >= 16px. */
 
@@ -192,7 +196,7 @@ body.remodal-is-active .remodal {
     height: 45px;
     padding: 0 9px; 
     text-transform: uppercase;
-    color: #00e1b9;
+    color: #252525;
     font-size: 1.000em;
     font-family: 'CrimsonText-Italic', sans-serif;
     line-height: 24px;

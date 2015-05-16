@@ -702,10 +702,10 @@
 @media (max-width: 770px) {
     .ssk-group,
     .ssk-sticky  { 
-        position: relative; 
-        left: -18px; 
-        top: 0px;
-        float: right; 
+        position: relative;
+        top: -10px;
+        display: table;
+        margin: 0 auto;
     }
 }
 @media (max-width: 450px) {
