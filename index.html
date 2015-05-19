@@ -44,7 +44,11 @@
  
 	<body>
 		<header class="main_h">
-            <a class="logo" href="#landing"><img src="img/nav/nav-logo.png" aria-label="Dustin's Words Logo" alt="Dustin's Words Logo"></a>
+            <a class="logo" href="#landing">
+            	<img src="img/nav/nav-logo.png" aria-label="Dustin's Words Logo" alt="Dustin's Words Logo">
+            </a>
+            <a id="indiegogo" class="logo" href="http://igg.me/at/dustinswords">Support Our<img src="img/nav/indiegogo-logo.png" aria-label="Link to indiegogo" alt="Indiegogo logo">
+            </a>
 
             <div class="mobile-toggle" aria-label="hamburger menu icon">
                 <span></span>
@@ -57,7 +61,7 @@
                     <li><a href="#" aria-label="You are currently on this overview page that describes the project at a high level.">overview</a></li>
                     <li><a href="about.html" aria-label="To learn more background and purpose of our non-profit initiative click here.">about</a></li>
                     <li><a href="http://dustinswords.tumblr.com" target="_blank" aria-label="To view out blog and most up-to-date activity, click this link. It will open our blog in a new tab.">blog</a></li>
-                    <li><a href="#modal" aria-label="To view out blog and most up-to-date activity, click this link. It will open our blog in a new tab.">Contact</a></li>
+                    <li><a href="#modal" aria-label="Opens up a modal overlay in where you can fill in a view form fields so we can better contact you">Contact</a></li>
                 </ul>
             </nav>
 
@@ -76,21 +80,20 @@
 			        	<td><a href="#" aria-label="You are currently on this overview page that describes the project at a high level.">overview</a></td>
 			        	<td><a href="about.html" aria-label="To learn more background and purpose of our non-profit initiative click here.">about</a></td>
 			        	<td><a href="http://dustinswords.tumblr.com" target="_blank" aria-label="To view out blog and most up-to-date activity, click this link. It will open our blog in a new tab.">blog</a></td>
-			        	<td><a href="#modal" aria-label="To view out blog and most up-to-date activity, click this link. It will open our blog in a new tab.">Contact</a></td>
+			        	<td><a href="#modal" aria-label="Opens up a modal overlay in where you can fill in a view form fields so we can better contact you">Contact</a></td>
 			      	</tr>
 			    </div><!-- end nav-center -->
     		</div><!-- end nav -->
 
 
 			<div id="landing-content">
-				<img src="img/landing/logo1.png">
-				<img id="logo2" src="img/landing/logo2.png">
+				<img src="img/landing/logo1.png" alt="Dustin's Words Logo">
+				<img id="logo2" src="img/landing/logo2.png" alt="Dustin's Words Logo">
 
 				<h5 class="seven columns centered">An invention that helps people who can’t speak communicate their needs at the push of a button.</h5>
 
 				<div class="button">
-					<span></span>
-					<a href="#how-it-works" aria-label="Want to keep informed about the project or want to help in anyway? This link will send you down the page, directly to our form."><button>How It Works</button></a>
+					<a href="http://igg.me/at/dustinswords" aria-label="Want to keep informed about the project or want to help in anyway? This link will send you down the page, directly to our form."><button>Support our Indiegogo</button></a>
 				</div>
 			</div><!-- end landing-content -->
 		</section><!-- end landing -->
@@ -133,7 +136,7 @@
 				</div><!-- end prototype-for-one-info -->
 
 				<div id="prototype-for-one-video" class="six columns">
-					<iframe src="https://player.vimeo.com/video/96746468?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe> 
+					<iframe src="https://player.vimeo.com/video/96746468?title=0&byline=0&portrait=0" width="500" height="281" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen aria-label="A video that details the background and future of Dustin's Words."></iframe> 
 				</div><!-- end prototype-for-one-video -->
 			</div><!-- end prototype-for-one-content -->
 		</section><!-- end prototype-for-one -->
@@ -151,6 +154,10 @@
 				</div><!-- end for-many-info -->
 				<div id="device-container" class="six columns">
 					<img src="img/for-many/device-guts-90.jpg" alt="A prototype photo of Dustin's Words with a play button on top of it that will luanch a video player. The video talks in more detail about the inception of the version 1 prototype.">
+
+				</div><!-- end device-container -->
+				<div id="device-container-90" class="six columns">
+					<img src="img/for-many/device-guts-med.jpg" alt="A prototype photo of Dustin's Words with a play button on top of it that will luanch a video player. The video talks in more detail about the inception of the version 1 prototype.">
 				</div><!-- end device-container -->
 			</div><!-- end for-many-content -->
 		</section><!-- end for-many -->
@@ -160,11 +167,11 @@
 				<h3>stay informed</h3>
 				<h6>Want to help us make the world more accessible?</h6>
 
-				<form action="//dustinswords.us10.list-manage.com/subscribe/post?u=265df7d89342cdafa7867c4fd&amp;id=ff152a9059" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+				<form action="//dustinswords.us10.list-manage.com/subscribe/post?u=265df7d89342cdafa7867c4fd&amp;id=ff152a9059" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate aria-label="A general stay informated contact us form">
 
 					<input id="subscribe-field" type="email" value="" name="EMAIL" placeholder="email address" required>
 
-					<button class="contact-button" type="submit" value="Subscribe" name="subscribe">Subscribe</button> 
+					<button class="contact-button" type="submit" value="Subscribe" name="subscribe">Subscribe</button>
 
 			    	<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
 			    	<div style="position: absolute; left: -5000px;">
@@ -203,36 +210,12 @@
 		<script src="js/slide-down-nav.js"></script>
 		<script src="js/scrolline.js"></script>
 		<script src="js/remodal.js"></script>
-		<!--<script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>-->
-		<!--<script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='MESSAGE';ftypes[3]='text';fnames[4]='MMERGE4';ftypes[4]='dropdown';}(jQuery));var $mcj = jQuery.noConflict(true);
-		</script>-->
 
 		<div class="remodal-bg">
 		    <a href="#modal">Contact Modal</a>
 		    <div class="remodal" data-remodal-id="modal">
 		        <h3>Contact Us!</h3>
-
-		        <!--<form id="modal-content" action="//dustinswords.us10.list-manage.com/subscribe/post?u=265df7d89342cdafa7867c4fd&amp;id=358dd2175b" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
-
-		        	<input type="text" value="" name="FNAME" tabindex="1" aria-label="Enter Your Name" placeholder="Name" required>
-
-					<input type="email" value="" name="EMAIL" placeholder="email address" required tabindex="2" aria-label="Enter Your Email Address" placeholder="Email Address" required>
-
-						<select>
-							<option value="" disabled selected>SIGN UP TO STAY INFORMED</option>
-							<option value="1">I know someone who could benefit from Dustin’s Words.</option>
-							<option value="2">I’d like to share my family’s story.</option>
-							<option value="3">I’m an individual interested in helping.</option>
-							<option value="4">I’m a company interested in helping.</option>
-							<option value="5">I’d like to stay informed.</option>
-						</select>
-
-					<textarea type="text" tabindex="3" aria-label="Enter a Message" placeholder="Message" rows="10" maxlength="1500" name="message"></textarea>
-				</form>-->
-
-
-
-				<form id="modal-content" action="//dustinswords.us10.list-manage.com/subscribe/post?u=265df7d89342cdafa7867c4fd&amp;id=358dd2175b" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+				<form id="modal-content" action="//dustinswords.us10.list-manage.com/subscribe/post?u=265df7d89342cdafa7867c4fd&amp;id=358dd2175b" method="post" name="mc-embedded-subscribe-form" target="_blank" novalidate aria-label="A more detailed contact form">
 
 					<input type="text" placeholder="Name" value="" name="FNAME" required>
 

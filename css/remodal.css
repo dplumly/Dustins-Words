@@ -60,7 +60,7 @@ html.remodal-is-locked {
 #modal-content { position: relative; }
 #modal-content  option { color: #a8a8a8; }
 #modal-content select {
-    width: 328px;
+    width: 400px;
     padding: 9px;
     text-transform: uppercase;
     color: #a8a8a8;
@@ -329,9 +329,11 @@ body.remodal-is-active .remodal {
         border-radius: 2px;
     }
     #modal-content input { width: 328px; }
+    #modal-content select { width: 328px; }
 }
 @media only screen and (max-width: 450px) {
-    #modal-content input { width: 328px; }
+    #modal-content input { width: 250px; }
+    #modal-content select { width: 250px; }
 }
 
 /* IE8
