@@ -89,8 +89,6 @@ html.remodal-is-locked {
 textarea:focus::-webkit-input-placeholder { color: transparent;}
 */
 .modal-button {
-    /*position: absolute;
-    right: 0;*/
     bottom: -20px;
     background-color: #0e152b;
     height: 45px;
@@ -98,6 +96,7 @@ textarea:focus::-webkit-input-placeholder { color: transparent;}
     border-radius: 0;
     color: #fff;
     font-size: .75em;
+    border: none;
     -webkit-transition:All .2s ease;
     -moz-transition:All .2s ease;
     -o-transition:All .2s ease;
@@ -156,7 +155,6 @@ body.remodal-is-active .remodal-bg {
 body.remodal-is-active .remodal-overlay { opacity: 1; }
 
 /* Default theme styles of the modal dialog */
-
 .remodal {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;

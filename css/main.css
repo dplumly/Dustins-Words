@@ -116,6 +116,7 @@ button {
 
 button:hover {
     background-color: #0e152b;
+    border: 2px solid #fff;
 }
 /*========================
 
@@ -248,6 +249,7 @@ nav ul a:hover { opacity: .5; }
     font-size: .5em;
     letter-spacing: 1px;
 }
+
 #indiegogo img {
     position: relative;
     top: 11px;
@@ -432,6 +434,116 @@ Email-section
 :-ms-input-placeholder {  color: #a8a8a8; letter-spacing: 1px; }
 
 input:focus::-webkit-input-placeholder { color: transparent;}
+/*========================
+
+Contact-page
+
+========================*/
+#contact {
+     background: url('../img/contact/contact-bg.jpg') center center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-color: #059eff;
+    height: 100%;
+}
+
+.contact {
+    max-width: 700px;
+    min-height: 0;
+    margin: 0 auto;
+    position: relative;
+    top: 100px;
+    top: 40%;
+    transform: translateY(-40%);
+    -ms-transform: translateY(-40%);
+    -webkit-transform: translateY(-40%);
+    -moz-transform: translateY(-40%);
+    -o-transform: translateY(-40%);
+    right: 0;
+}
+
+#contact-content { 
+    position: relative;
+    display: table;
+    margin: 0 auto;
+    max-width: 700px;
+}
+#contact-content  option { color: #a8a8a8; }
+#contact-content select {
+    width: 400px;
+    padding: 9px;
+    text-transform: uppercase;
+    color: #a8a8a8;
+    font-size: 1.000em;
+    font-family: 'CrimsonText-Italic', sans-serif;
+    border: 0px;
+    margin: 10px 0;
+    height: 45px;
+    -webkit-border-radius: 0px;
+}
+
+#contact-content #input-1 { margin: 20px 0; }
+
+#contact-content input#message {
+    height: 100px;
+}
+
+#contact-content input {
+    width: 400px;
+    height: 45px;
+    padding: 0 9px; 
+    text-transform: uppercase;
+    color: #252525;
+    font-size: 1.000em;
+    font-family: 'CrimsonText-Italic', sans-serif;
+    line-height: 24px;
+    border: 0px;
+    margin: 10px 0;
+    display: table;
+}
+
+.contact h3 { color: #fff; text-align: center; }
+
+/*#modal-content textarea {
+    width: 328px;
+    padding: 9px;
+    text-transform: uppercase;
+    color: #00e1b9;
+    font-size: 1.000em;
+    font-family: 'CrimsonText-Italic', sans-serif;
+    border: 0px;
+    margin: 10px 0;
+}*/
+.contact-us-button {
+  bottom: -20px;
+  background-color: #0e152b;
+  height: 45px;
+  width: 112px;
+  border-radius: 0;
+  color: #fff;
+  font-size: .75em;
+  border: none;
+  margin: 0 auto;
+  display: table;
+  -webkit-transition: All .2s ease;
+  -moz-transition: All .2s ease;
+  -o-transition: All .2s ease;
+}
+
+.contact-us-button:hover {
+  background-color: #fff;
+  color: #0e152b;
+  border: 1px solid #0e152b;
+}
+/* Media queries
+   ========================================================================== */
+
+@media only screen and (max-width: 450px) {
+    #contact-content input { width: 250px; }
+    #contact-content select { width: 250px; }
+}
 /*========================
 
 Footer
@@ -739,12 +851,13 @@ team
     }
     .email-content form, input#subscribe-field , select#subscribe-field  { width: 350px; }
     footer { height: auto; }
+    #about1-content a { display: none; }
     #technology { min-height: 865px; height: auto; }
     #brotherly { min-height: 900px; height: auto; }
     #brotherly-img { transform: translateY(0%); }
 }
 @media (max-width: 450px) { 
-    a#indiegogo.logo { margin-left: 130px; top: 0; width: auto; font-size: .75em; }
+    a#indiegogo.logo { margin-left: 130px; top: 0; width: auto; font-size: .5em; }
     a#indiegogo.logo img { width: auto; }
     h1 { font-size: 4em; }
     h2 { font-size: 1.5em; }
@@ -757,6 +870,7 @@ team
 @media (max-width: 320px) {
     #nav-center a { padding: .6em; }
     h2 { font-size: 2.7em; }
+    a#indiegogo.logo { margin-left: 100px; }
     .email-content form, input#subscribe-field , select#subscribe-field  { width: 300px; }
 }
 
